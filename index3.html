@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>„‰Ã«  «· Ã«—ÌÂ ‘⁄»«‰</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        header {
+            background-color: #3a3a8e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+            header .datetime {
+                font-size: 14px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+            }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c2c6c;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+                nav a:hover {
+                    color: #ffdd57;
+                }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #3a3a8e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .products, .about {
+            margin: 20px 0;
+        }
+
+            .products h2, .about h2 {
+                color: #2c2c6c;
+            }
+
+            .products ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .products li {
+                margin: 20px 0;
+                font-weight: bold;
+                color: #2c2c6c;
+                background-color: #f4f4ff;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: flex;
+                align-items: center;
+            }
+
+                .products li img {
+                    width: 100px;
+                    height: auto;
+                    margin-right: 15px;
+                    border-radius: 8px;
+                }
+
+                .products li:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+            .about p {
+                color: #555;
+            }
+
+        .designer {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>„‰ Ã«  ﬁ⁄ÿ»Â</h1>
+        <p>«·—ƒÌ… - «·ÃÊœ… - «· „Ì“</p>
+        <div class="datetime" id="datetime"></div>
+    </header>
+
+    <nav>
+        <a href="#about">„‰ ‰Õ‰</a>
+        <a href="#products">„‰ Ã« ‰«</a>
+        <a href="#contact"> Ê«’· „⁄‰«</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>„‰ ‰Õ‰</h2>
+            <p>‘—ﬂ… »‰ ‘⁄»«‰ ÂÌ ‘—ﬂ… —«∆œ…  ﬁœ„ „‰ Ã«  „ „Ì“… ›Ì „Œ ·› «·„Ã«·« . ‰· “„ »√⁄·Ï „⁄«ÌÌ— «·ÃÊœ… · ÕﬁÌﬁ —÷« ⁄„·«∆‰«.</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>„‰ Ã« ‰«</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="«·”Ì—«„Ìﬂ">
+                    «·”Ì—«„Ìﬂ: Ã„Ì⁄ √‰Ê«⁄ «·”Ì—«„Ìﬂ ⁄«·Ì… «·ÃÊœ…
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="«·»·«ÿ «·√—÷Ì">
+                    «·»·«ÿ «·√—÷Ì:  ’«„Ì„ „ ‰Ê⁄…  ‰«”» ﬂ· «·√–Ê«ﬁ
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="√‰Ê«⁄ «·ÿ·«¡">
+                    √‰Ê«⁄ «·ÿ·«¡: ÿ·«¡ œ«Œ·Ì ÊŒ«—ÃÌ »√›÷· «·Œ«„« 
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2> Ê«’· „⁄‰«</h2>
+            <p>«·»—Ìœ «·≈·ﬂ —Ê‰Ì: info@ben-shaban.com</p>
+            <p>«·Â« ›: +123456789</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ‘—ﬂ… »‰ ‘⁄»«‰. Ã„Ì⁄ «·ÕﬁÊﬁ „Õ›ÊŸ….</p>
+        <p class="designer"> ’„Ì„ Ê ÿÊÌ—: ⁄»œ«··Â «·‰Ã«—</p>
+    </footer>
+
+    <script>
+        const updateDateTime = () => {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('ar-EG', options);
+        };
+
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>

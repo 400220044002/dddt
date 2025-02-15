@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الأفعى</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* تنسيقات إضافية */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            margin: 20px auto;
+        }
+        .keys {
+            margin-top: 20px;
+        }
+        .arr {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background-color: #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .arr:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>لعبة الأفعى</h1>
+    <div id="game-container">
+        <canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
+    </div>
+    <div class="keys">
+        <a class="up arr" onclick="Snake.action('up')">
+            <i>⬆</i>
+        </a>
+        <br />
+        <a class="left arr" onclick="Snake.action('left')">
+            <i>⬅</i>
+        </a>
+        <a class="down arr" onclick="Snake.action('down')">
+            <i>⬇</i>
+        </a>
+        <a class="right arr" onclick="Snake.action('right')">
+            <i>➡</i>
+        </a>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
